@@ -1,3 +1,5 @@
+package UDP;
+
 import java.net.DatagramPacket;
 import java.net.DatagramSocket;
 import java.net.InetAddress;
@@ -5,7 +7,7 @@ import java.net.InetAddress;
 public class EnviarMSSPUDP{
     public static void main(String[] args) {
         try {
-            String mensajeCompleto = "Prendido a tu botella vacía, esa que antes siempre tuvo gusto a nada.";
+            String mensajeCompleto = "Prendido a tu botella vacía, esa que antes siempre tuvo gusto a nada aaaaaa.";
 
             MSSP parte1 = new MSSP((byte) 8, (byte) 1, mensajeCompleto.substring(0, 24));
             MSSP parte2 = new MSSP((byte) 8, (byte) 2, mensajeCompleto.substring(24, 48));
