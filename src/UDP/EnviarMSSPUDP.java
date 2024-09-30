@@ -1,5 +1,9 @@
 package UDP;
 
+//Ejercicio 1
+//      Realizar un programa que permita determinar a cuales de los puertos entre el 1 al 1024 se puede establecer
+  //      una conexión a : 1) - al host local 2) una maquina Linux del laboratorio. Lo de máquina linux de laboratorio me falta.
+
 import java.net.DatagramPacket;
 import java.net.DatagramSocket;
 import java.net.InetAddress;
