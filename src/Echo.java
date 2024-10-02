@@ -12,10 +12,10 @@ public class Echo {
     //    DataInputStream data_in_consola;
         String linea;
         PrintStream data_out_socket;
-        String host = "localhost";
+        String host = "172.20.10.5";
 
         try {
-            so_echo = new Socket(host, 7);
+            so_echo = new Socket(host, 50000);
             BufferedReader data_in_socket = new BufferedReader(new InputStreamReader(so_echo.getInputStream()));
             BufferedReader data_in_consola = new BufferedReader(new InputStreamReader(System.in));
 

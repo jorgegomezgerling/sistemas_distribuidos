@@ -35,10 +35,9 @@ public class EchoServer {
                         if (inputLine.equals(".")) {
                             break;
                         }
-
-                        clientSocket.close();
-                        System.out.println("Conexión con el cliente cerrada. ");
                     }
+                    clientSocket.close();
+                    System.out.println("Conexión con el cliente cerrada. ");
                 } catch (IOException e) {
                     System.out.println("Error al crear el servidor: " + e.getMessage());
                 }
