@@ -11,11 +11,11 @@ public class Daytime {
 
         Socket so_daytime;
        // DataInputStream data_daytime;
-        String host = "time.nist.gov";
+        String host = "192.168.1.20";
         String[] prueba = null;
 
         try{
-            so_daytime = new Socket(host, 13);
+            so_daytime = new Socket(host, 5000);
            // data_daytime = new DataInputStream(so_daytime.getInputStream());
 
             BufferedReader InputStream = new BufferedReader(new InputStreamReader(so_daytime.getInputStream()));

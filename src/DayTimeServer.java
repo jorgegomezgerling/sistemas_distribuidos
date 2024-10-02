@@ -7,7 +7,7 @@ import java.time.format.*;
 
 public class DayTimeServer {
     public static void main(String[] args) {
-        int port = 5000; // Puerto encima de 1024 porque salta error.
+        int port = 10000; // Puerto encima de 1024 porque salta error.
         try (ServerSocket serverSocket = new ServerSocket(port)) {
             System.out.println("Servidor Daytime escuchando en el puerto " + port);
 
@@ -29,7 +29,8 @@ public class DayTimeServer {
 
                     // Enviar la fecha y hora al cliente
                     PrintWriter out = new PrintWriter(clientSocket.getOutputStream(), true); // Envío automático
-                    out.println("Fecha y hora: " + now.format(formatter));
+                    out.println("Fecha: " + localDate);
+                    out.println("Hora: " + localTime);
 
                     System.out.println("Fecha y hora enviadas al cliente.");
 
