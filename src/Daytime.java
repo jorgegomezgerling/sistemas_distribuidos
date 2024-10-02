@@ -4,14 +4,12 @@ import java.io.InputStreamReader;
 import java.net.Socket;
 import java.net.UnknownHostException;
 
-// falta probar con maquina linux, es cuestion de cambiar el host.
-
 public class Daytime {
     public static void main(String[] args) {
 
         Socket so_daytime;
        // DataInputStream data_daytime;
-        String host = "192.168.1.20";
+        String host = "172.20.10.5";
         String[] prueba = null;
 
         try{
@@ -35,8 +33,8 @@ public class Daytime {
             // Por cuestiones de null point;
 
             if (prueba != null){
-                System.out.println("Día: " + prueba[1]);
-                System.out.println("Hora: " + prueba[2]);
+                System.out.println("Día: " + prueba[0]);
+                System.out.println("Hora: " + prueba[1]);
             }
 
 
