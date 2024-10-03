@@ -5,15 +5,16 @@ import java.net.UnknownHostException;
 public class Cliente_msg {
     public static void main(String[] args) {
         Socket cliente_so;
-        String host = "172.20.10.5"; // dependiendo el IP de la maquina en un momento dado.
+     //   String host = "172.20.10.5"; // dependiendo el IP de la maquina en un momento dado.
 
         // Verificamos que se haya pasado un argumento para el puerto
         if (args.length < 1) {
-            System.out.println("Uso: java Cliente_msg <puerto>");
-            return; // Salir si no se proporciona el puerto
+            System.out.println("Uso: java Cliente_msg <name_server> <puerto>");
+            return; // Salir si no se proporciona el puerto ni el servidor
         }
 
-        int port = Integer.parseInt(args[0]); // Convertir el argumento a entero
+        String host = args[0];
+        int port = Integer.parseInt(args[1]); // Convertir el argumento a entero
 
         try {
             cliente_so = new Socket(host, port);
