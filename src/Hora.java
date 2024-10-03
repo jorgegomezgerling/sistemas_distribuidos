@@ -1,6 +1,3 @@
-import java.time.LocalDateTime;
-import java.time.format.DateTimeFormatter;
-
 public class Hora {
     public static void main(String[] args) {
 //        LocalDateTime ahora = LocalDateTime.now();
@@ -17,10 +14,10 @@ public class Hora {
 //
 //    }
 
-        LocalDateTime now = LocalDateTime.now();
-        DateTimeFormatter formatter = DateTimeFormatter.ofPattern("yyyy-MM-dd HH:mm:ss");
-        String formattedDate = now.format(formatter);
-        System.out.println(formattedDate);
+//        LocalDateTime now = LocalDateTime.now();
+//        DateTimeFormatter formatter = DateTimeFormatter.ofPattern("yyyy-MM-dd HH:mm:ss");
+//        String formattedDate = now.format(formatter);
+//        System.out.println(formattedDate);
 
     }
 }

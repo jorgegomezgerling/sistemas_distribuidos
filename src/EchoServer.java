@@ -7,7 +7,7 @@ import java.net.Socket;
 
 public class EchoServer {
     public static void main(String[] args) throws IOException {
-        int port = 7; // De acuerdo con la documentación debe ser el puerto 7;
+        int port = 50000; // De acuerdo con la documentación debe ser el puerto 7;
         try (ServerSocket serverSocket = new ServerSocket(port)) {
             System.out.println("Servidor Echo escuchando en el puerto " + port);
 
