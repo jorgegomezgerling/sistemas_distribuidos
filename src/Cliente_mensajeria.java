@@ -26,6 +26,7 @@ public class Cliente_mensajeria {
 
         try {
             socket_cliente = new Socket(host, port);
+            System.out.println("Conectado con éxito.");
             BufferedReader data_in_socket = new BufferedReader(new InputStreamReader(socket_cliente.getInputStream()));
             BufferedReader data_in_consola = new BufferedReader(new InputStreamReader(System.in));
 
